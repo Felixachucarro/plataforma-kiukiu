@@ -1,0 +1,448 @@
+<!-- Buenas días alumnos de Sagrada Familia!
+
+Mi nombre es Félix Achucarro, docente del Area de Informática,
+
+Esta página esta realizada con el objetivo de que puedan
+conocer las caracteristicas de una página web estática con HTML y CSS
+poder repasar los conceptos dados en clase y que se puedan amigar con este formato de trabajo.
+
+Este elemento es un "Comentario" de HTML, se utiliza justamente con ese fin.
+Poder comentar código y dejar un mensaje a la persona que esta leyendólo.
+Ademas sirve para dejar una constancia para otros programadores, en el caso de explicar como funciona
+algun elemento, cúal es su utilidad o dejar datos importantes.
+
+Estos comentarios no se pueden visualizar en nuestro sitio web, solamente en el codigo.
+Se puede comentar con las teclas "control + K + C"
+-->
+
+
+<!DOCTYPE html>
+
+
+<html lang="es">   <!-- Esta etiqueta indica el idioma en el cual estará escrita nuestra página web, en este caso "es" índica que está en español -->
+
+
+<head>
+
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- titulo de la página -->
+    <title>Capitulo 2</title>
+
+    <link rel="icon" href="ruta/al/icono.ico" type="image/x-icon">
+
+    <!-- vinculación de hoja de estilos css y librerías (Preguntarle a Félix wtf es una librería en html) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- librería/framework en este caso bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fuente -->
+
+</head>
+
+
+
+<body>
+
+    <!-- Barra de navegación -->
+
+    <nav class="navbar navbar-light bg-light fixed-top" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; z-index: 2;">
+        
+        <div class="container-fluid">
+          <a class="navbar-brand " href="index.html">
+            <img src="https://i.ibb.co/TYYpTNS/LOGO.png" alt="" width="200px" class="d-inline-block align-text-top">
+            
+          </a>
+        </div>
+
+    </nav>
+
+    
+   
+    
+        
+        <!-- clase creada para hacer la portada de la página, dentro de este contenedor hay dos clases:
+        una creada para darle formato al texto y la otra para colocar elementos -->
+
+        <div class=" portada" id="variante">
+
+            <!-- Esto es algo para prestar atención, no es necesario siempre recurrir a una hoja de css externa para aplicar estilos
+             se puede modificar individualmente la propiedad de un elemento añadiendo a la etiqueta la palabra style="propiedad: valor;"
+            y dentro de las comillas se pueden poner las propiedades deseadas para ese elemento con la sintáxis de css-->
+
+            <div class="texto" style="margin-top: 10%; margin-left: 5%;"> 
+
+                <h1 style="font-weight: 700; font-size: 3em;">Informática</h1>
+
+                <h3 style="font-weight: 200;"> <b>Capitulo 2:</b> Preparando el entorno de trabajo</h3>
+
+                <p>Por: Félix Achucarro</p>
+
+                <br>
+                
+            </div>
+
+
+
+            <div class="elemento chica">
+
+                <img src="imagen-ejemplo.png" alt="descripcion de la imagen" width="400px" style="z-index: 20;">
+
+            </div>
+        </div>
+
+        <!-- clase "contenedor"  -->
+
+        <div class="contenedor" style="padding-top: 5%;">
+
+            <div class="elemento">
+                <img src="Screenshot_3.jpg" class="imagenes">
+            </div>
+
+
+            <div class="texto" style="text-align: center;">
+
+               
+                Para acompañar este recorrido, debes ingresar a la siguiente página para descargar nuestro editor de codigo 
+                y las herramientas que utilizaremos durante las siguientes clases: 
+                <br>
+
+                <b>¡Bienvenidos al desarrollo Web!</b>
+
+                </p>
+
+                    <a href="https://code.visualstudio.com/download" target="_blank">
+                    <button class="button-32" role="button"  >Descargar VSCode</button>
+                    </a> 
+
+            </div>
+
+           
+
+        </div>
+
+        <!--  -->
+
+        <div>
+             <hr>
+        </div>
+
+        <div class="contenedor">
+            <div class="texto">
+                <h3>
+                    Instalación Rápida
+                </h3>
+
+                <p style=" margin-top: 2%;">
+                    <b>Paso 1:</b> Descarga el instalador de la página señalada
+                    
+                </p>
+            </div>
+            
+            <div class="elemento">
+                <img src="instalacion.jpg" style="width: 400px; border-radius: 30px 30px 30px 30px;">
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="texto">
+                
+
+                <p style=" margin-top: 2%;">
+                    <b>Paso 2:</b> Acepte los terminos y todas las etapas de instalación
+                    
+                </p>
+            </div>
+            
+            <div class="elemento">
+                <img src="instalacion 2.jpg" style="width: 400px; border-radius: 30px 30px 30px 30px;">
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="texto">
+                
+
+                <p style=" margin-top: 2%;">
+                    <b>Paso 3:</b> Busca el programa "visual studio code" en el <b>escritorio</b> o en <b>menú inicio</b>                    
+                </p>
+            </div>
+            
+            <div class="elemento">
+                <img src="instalacion 3.jpg" style="width: 400px; border-radius: 30px 30px 30px 30px;">
+            </div>
+        </div>
+
+        <!-- segunda sección de la página -->
+        <div class="contenedor" style="padding-top: 5%;">
+
+            <div class="elemento">
+                
+
+            <img src="vsc1.jpg" alt="" srcset="" style="width: 500px; border-radius: 30px 30px 30px 30px;">
+                    
+            </div>
+
+
+            <div class="texto" style=" padding: 2%;">
+                <h1>Ya en el programa</h1>
+
+                <p style="text-align: justify;">
+                Una vez ingresado al programa, nos aparecerá un menú central con varias opciones.
+                <br>
+                En primera instancia vamos a elegir la opción <b>"Abrir carpeta"</b> 
+                </p>
+
+            </div>
+
+           
+
+        </div>
+
+        <div class="contenedor" style="padding-top: 5%;">
+
+            <div class="texto" style=" padding: 2%;">
+                <h1 >Creando nuestra carpeta de trabajo</h1>
+
+                <p>En el escritorio o preferentemente en mis documentos, crearemos una carpeta con la siguiente información: <br>
+                <b>curso - nombre del alumno</b> 
+                
+                          
+
+            </div>
+
+               
+            <div class="contenedor" >
+                <div class="elemento">
+                    <img src="vsc2.jpg" alt="" style="width: 500px; border-radius: 30px 30px 30px 30px;">
+                </div>
+
+                
+            </div>
+           
+
+        </div>
+
+        <div class="contenedor" style="padding-top: 5%;">
+
+            <div class="texto" style="text-align: start;">
+                <h1>Creando Archivos</h1>
+
+                    <b>Una vez creada la carpeta y seleccionada para abrir en Visual studio Code</b>
+                    <br>
+                    vamos a entender como es la interfaz del programa: 
+                    Por el lado izquierdo tenemos una <b> barra con iconos </b> que nos índica en donde estamos trabajando.
+                    En este caso siempre estaremos en el <b>explorador de archivos</b> <img src="explorador.jpg" width="30 px"alt="" srcset=""> <br>
+
+                    El explorador de archivos, como índica su nombre es un visualizador de la carpeta en la cual trabajaremos.
+                    podremos crear distintos archivos de distintos lenguajes de programación y también arrastrar elementos multimedia.
+
+                    </p>   
+                    en primer instancia: <b>crearemos un archivo nuevo y lo nombraremos "index.html"
+                    y también uno llamado "styles.css"</b> 
+
+                    <br>
+                    <br>
+
+                <div class="elemento">
+                    <img src="vsc3.jpg" style="width: 500px; border-radius: 30px 30px 30px 30px;" alt="" srcset="">
+                    
+                </div>
+
+                  
+                
+                
+            </div>
+
+            <div class="texto">
+
+                
+                       
+            
+                    <div class="elemento">
+                        <div class="elemento">
+                            <img src="vsc4.jpg" style="width: 300px; border-radius: 30px 30px 30px 30px;" alt="" srcset="">
+                        </div>
+        
+                    </div>
+                
+                    
+            </div>
+
+
+           
+
+           
+
+        </div>
+
+
+        <div class="contenedor" style="padding-top: 5%;">
+
+            <div class="texto" style="text-align: start;">
+                <h1>Estructura <b>Html</b></h1>
+
+                <p>Vscode tiene atajos del teclado muy interesantes, lo que nos permite ahorrar mucho tiempo escribiendo codigo,
+                para generar una estructura html completa, solo hay que poner un signo de exclamación <b>(!) y</b> y apretar <b>enter</b>
+                en la primer opción
+                </p>
+
+                <div class="elemento">
+                    <img src="vsc5.jpg" class="imagenes" alt="" srcset="">
+                </div>
+                
+
+            </div>
+
+            <div class="elemento" style="margin-top: 10%;">
+            
+                <p>Se genera automaticamente una estructura html con sus etiquetas <b>head</b> y <b>body</b></p>
+                    <img src="vsc6.jpg"  alt="" class="imagenes" style="width: 500px!important;">
+                
+                    
+            </div>
+
+
+           
+
+           
+
+        </div>
+
+        <div class="contenedor">
+            <div class="texto">
+
+                <h1>Live server</h1>
+                <br>
+                <h3> Paso 1: </h3> 
+                <p>Vamos a instalar una extensión de vscode llamada "live server", es una extensión
+                    que permite visualizar en el navegador y en tiempo real los cambios que realicemos en nuestra página web
+                </p>
+                <br>
+                <p>En la barra de iconos de la izquierda vamos a buscar el icono de extensiones <img src="extension.jpg" width="40px"></p>
+                <img src="vsc7.jpg" class="imagenes" srcset="">
+                <br>
+                <br>
+                
+            </div>
+            <div class="texto" style="margin-top: 10%;">
+                <h3> Paso 2: Búsqueda</h3>
+                <p>En la barra de búsqueda de la sección buscamos <b>Live server</b> y nos debería aparecer el complemento</p>
+                <img src="vsc8.jpg" style="width: 450px; border-radius: 20px 20px 20px 20px;" srcset="">
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="texto">
+
+                <br>
+                <br>
+                <h3> Paso 3: Instalación </h3> 
+                <p>
+                   En el menú del complemento, buscamos el botón con la opción instalar y listo, ya tenemos live server instalado.
+
+                </p>
+                <img src="vsc9.jpg"  style="width: 500px; border-radius: 20px 20px 20px 20px;" srcset="">
+                <br>
+                <br>
+                
+            </div>
+            <div class="texto" style="margin-top: 2%;">
+                <br>
+                <h3>Paso 4: Prueba de estado</h3>
+                <p>
+                    Para comprobar que <b>Live server</b> este funcionando, vamos a escribir una etiqueta h1 con un texto.
+                    Luego vamos a guardar los cambios con <b>control(ctrl) + S </b> <br>
+                    Para ver que la aplicación funciona, vamos a hacer clic derecho con el mouse en alguna parte del codigo y 
+                    seleccionar la opción <b>Open with live server</b>. Se nos abrirá una pestaña del navegador con nuestra página web.
+
+
+                </p>
+                <img src="vsc10.jpg" style="width: 400px; border-radius: 20px 20px 20px 20px;" srcset="">
+                <br>
+                <img src="vsc11.jpg" style="width: 400px; border-radius: 20px 20px 20px 20px; margin-top: 3%;"  >
+            </div>
+        </div>
+
+
+        <div class="contenedor">
+            
+
+            <center>
+                <a href="index.html" target="_blank">
+                    <button class="button-32" role="button"  >volver al cápitulo 1</button>
+                    </a> 
+            </center>
+        </div>
+
+
+        
+
+
+
+
+    
+
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+        <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+          <div class="row">
+            <div class="col-lg-3 mb-3">
+              <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"/></svg>
+                <span class="fs-5">Sagrada Familia</span>
+              </a>
+              <ul class="list-unstyled small">
+                <li class="mb-2">Designed and built with all the love in the world by the <a href="/docs/5.3/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+                <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
+                <li class="mb-2">Currently v5.3.0-alpha3.</li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="/">Home</a></li>
+                <li class="mb-2"><a href="/docs/5.3/">Docs</a></li>
+                <li class="mb-2"><a href="/docs/5.3/examples/">Examples</a></li>
+                <li class="mb-2"><a href="https://icons.getbootstrap.com/">Icons</a></li>
+                <li class="mb-2"><a href="https://themes.getbootstrap.com/">Themes</a></li>
+                <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
+                <li class="mb-2"><a href="https://cottonbureau.com/people/bootstrap">Swag Store</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Guides</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="/docs/5.3/getting-started/">Getting started</a></li>
+                <li class="mb-2"><a href="/docs/5.3/examples/starter-template/">Starter template</a></li>
+                <li class="mb-2"><a href="/docs/5.3/getting-started/webpack/">Webpack</a></li>
+                <li class="mb-2"><a href="/docs/5.3/getting-started/parcel/">Parcel</a></li>
+                <li class="mb-2"><a href="/docs/5.3/getting-started/vite/">Vite</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Projects</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/examples/">Examples repo</a></li>
+              </ul>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+</body>
+
+
+
+</html>
+
+
